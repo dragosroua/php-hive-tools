@@ -40,5 +40,5 @@ Projects using PHP Hive Tools
 Related Projects
 -----------------------------
 
-* [php Hive tools](https://github.com/dragosroua/php-steem-tools) - initial release for the Steem blockchain
-* [steem.supply](https://steem.supply)
+* [php Hive tools](https://github.com/dragosroua/php-hive-tools) - initial release for the Hive	 blockchain
+* [hive.supply](https://hive.supply)
