@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-$config['webservice_url'] = 'steemd.minnowsupportproject.org';
-$api = new DragosRoua\PHPSteemTools\SteemApi($config);
+$config['webservice_url'] = 'api.hive.blog';
+$api = new DragosRoua\PHPHiveTools\HiveApi($config);
 $author = "dragosroua";
 /**
 **
