@@ -241,8 +241,8 @@ class HiveApi
     /* exchange related functions */
 
 	public function getCurrentValue($coin){
-		// calls CoinMarketCap Api and returns the current curse
-		$url = "https://api.coinmarketcap.com/v1/ticker/".$coin."/";
+		// calls CoinGecko Api and returns the current exchange rate
+		$url = "https://api.coingecko.com/api/v3/simple/price?ids=".$coin."&vs_currencies=usd";
 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
