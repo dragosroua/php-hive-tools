@@ -254,7 +254,33 @@ class HiveApi
 		curl_close($ch);
 		return $response;
 	}
+	
+	
+	/* get values by exchanges, defaulting to Bittrex if none is specified */
+	
+	public function getCurrentValueByExchange($exchange, $coin){
+		if($exchange == 'bittrex'){
+			// $coin is in the format BTC-HBD, BTC-HIVE
+			$url = "https://bittrex.com/api/v1.1/public/getticker?market=".$coin;
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, $url);
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );
+			// This is what solved the issue (Accepting gzip encoding)
+			curl_setopt($ch, CURLOPT_ENCODING, "gzip,deflate");     
+			$response = curl_exec($ch);
+			curl_close($ch);
+			return $response;
+		}
+		else {
+			return false;
+		}
+		// tbd add more exchanges 
 
+		
+	}
+	
 	// Contributions by @profchydon
 	// Getting this tool up to date with all available methods on api.hivejs documentation
 
