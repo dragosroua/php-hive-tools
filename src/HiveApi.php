@@ -255,22 +255,6 @@ class HiveApi
 		return $response;
 	}
 
-	public function getUserJSONData($user){
-		// calls CoinMarketCap Api and returns the current curse
-		$url = "https://hive.blog/@".$user.".json";
-
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );
-		curl_setopt($ch, CURLOPT_ENCODING, "gzip,deflate");
-		$response = curl_exec($ch);
-		curl_close($ch);
-		return $response;
-	}
-
-
 	// Contributions by @profchydon
 	// Getting this tool up to date with all available methods on api.hivejs documentation
 
