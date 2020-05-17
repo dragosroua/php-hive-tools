@@ -3,7 +3,7 @@
     "description": "PHP Tools to interact with the Hive blockchain.",
     "keywords": ["hive", "blockchain", "package"],
     "license": "MIT",
-    "version": "0.1.0",
+    "version": "0.1.0-stable",
     "authors": [
         {
             "name": "Dragos Roua",
