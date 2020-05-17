@@ -5,7 +5,7 @@ $api = new DragosRoua\PHPHiveTools\HiveApi($config);
 $author = "dragosroua";
 /**
 **
-**	Get the number of folloers, since it's resource intensive, we're using a basic cache mechanism
+**	Get the number of followers, since it's resource intensive, we're using a basic cache mechanism
 **
 **/
 $follower_count  = $api->getFollowerCount($account);
