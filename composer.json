@@ -12,13 +12,13 @@
     ],
     "type": "library",
     "require": {
-		"php": ">=5.4",
-		"textalk/websocket": "1.2.*"
+                "php": ">=5.4",
+                "textalk/websocket": "1.0.*"
     },
-	"require-dev": {
-		"phpunit/phpunit": "9.1.*"
+        "require-dev": {
+                "phpunit/phpunit": "5.2.*"
     },
-	"autoload": {
+    "autoload": {
         "psr-4": {
             "DragosRoua\\PHPHiveTools\\": "src/"
         }
