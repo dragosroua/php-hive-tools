@@ -1,5 +1,5 @@
 {
-    "name": "dragos-roua/php-hive-tools",
+    "name": "fkosmala/php-hive-tools",
     "description": "PHP Tools to interact with the Hive blockchain.",
     "keywords": ["hive", "blockchain", "package"],
     "license": "MIT",
@@ -8,6 +8,10 @@
         {
             "name": "Dragos Roua",
             "email": "dragosroua@gmail.com"
+        },
+        {
+            "name": "Florent Kosmala",
+            "email": "kosflorent@gmail.com"
         }
     ],
     "type": "library",

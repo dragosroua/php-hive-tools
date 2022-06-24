@@ -34,7 +34,7 @@ class HiveLayer {
     }
 
     public function call($method, $params = array(), $transport='curl') {
-        $request = $this->getRequest($method, $params);
+        $request = $this->getRequest('condenser_api.'.$method, $params);
         $response = '';
         if($transport == 'curl'){
         	$response = $this->curl($request);
